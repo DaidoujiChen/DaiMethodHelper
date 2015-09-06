@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		019A17731B9C2BF800BB8986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A17721B9C2BF800BB8986 /* main.m */; };
+		019A17761B9C2BF800BB8986 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A17751B9C2BF800BB8986 /* AppDelegate.m */; };
+		019A177E1B9C2BF800BB8986 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019A177D1B9C2BF800BB8986 /* Images.xcassets */; };
+		019A17971B9C2C1C00BB8986 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 019A17961B9C2C1C00BB8986 /* Default-568h@2x.png */; };
+		019A179C1B9C2C4F00BB8986 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A179A1B9C2C4F00BB8986 /* MainViewController.m */; };
+		019A179D1B9C2C4F00BB8986 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 019A179B1B9C2C4F00BB8986 /* MainViewController.xib */; };
+		019A17A01B9C2CF700BB8986 /* DaiMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A179F1B9C2CF700BB8986 /* DaiMethodHelper.m */; };
+		019A17A61B9C86F000BB8986 /* DaiMethodInfomation.m in Sources */ = {isa = PBXBuildFile; fileRef = 019A17A51B9C86F000BB8986 /* DaiMethodInfomation.m */; };
+		1C40724F1B9D78A9001F386C /* ILoveDaidouji.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AD39E41B9C95A2008BADEC /* ILoveDaidouji.a */; };
+		1C6ECD1E1B9EB334003EE818 /* NSString+Daidouji1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ECD1D1B9EB334003EE818 /* NSString+Daidouji1.m */; };
+		1C6ECD211B9EB39A003EE818 /* NSString+Daidouji2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ECD201B9EB39A003EE818 /* NSString+Daidouji2.m */; };
+		1C6ECD241B9EB454003EE818 /* MainViewController+DaidoujiCategory1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ECD231B9EB454003EE818 /* MainViewController+DaidoujiCategory1.m */; };
+		1C6ECD271B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ECD261B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.m */; };
+		1C6ECD2A1B9EB809003EE818 /* UIAlertView+ DaiMethodHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ECD291B9EB809003EE818 /* UIAlertView+ DaiMethodHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		019A176D1B9C2BF800BB8986 /* DaiMethodHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaiMethodHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		019A17711B9C2BF800BB8986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		019A17721B9C2BF800BB8986 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		019A17741B9C2BF800BB8986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		019A17751B9C2BF800BB8986 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		019A177D1B9C2BF800BB8986 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		019A17961B9C2C1C00BB8986 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		019A17991B9C2C4F00BB8986 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		019A179A1B9C2C4F00BB8986 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		019A179B1B9C2C4F00BB8986 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		019A179E1B9C2CF700BB8986 /* DaiMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiMethodHelper.h; sourceTree = "<group>"; };
+		019A179F1B9C2CF700BB8986 /* DaiMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaiMethodHelper.m; sourceTree = "<group>"; };
+		019A17A41B9C86F000BB8986 /* DaiMethodInfomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DaiMethodInfomation.h; sourceTree = "<group>"; };
+		019A17A51B9C86F000BB8986 /* DaiMethodInfomation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaiMethodInfomation.m; sourceTree = "<group>"; };
+		01AD39E41B9C95A2008BADEC /* ILoveDaidouji.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = ILoveDaidouji.a; sourceTree = "<group>"; };
+		1C6ECD1C1B9EB334003EE818 /* NSString+Daidouji1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Daidouji1.h"; sourceTree = "<group>"; };
+		1C6ECD1D1B9EB334003EE818 /* NSString+Daidouji1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Daidouji1.m"; sourceTree = "<group>"; };
+		1C6ECD1F1B9EB39A003EE818 /* NSString+Daidouji2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Daidouji2.h"; sourceTree = "<group>"; };
+		1C6ECD201B9EB39A003EE818 /* NSString+Daidouji2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Daidouji2.m"; sourceTree = "<group>"; };
+		1C6ECD221B9EB454003EE818 /* MainViewController+DaidoujiCategory1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MainViewController+DaidoujiCategory1.h"; sourceTree = "<group>"; };
+		1C6ECD231B9EB454003EE818 /* MainViewController+DaidoujiCategory1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MainViewController+DaidoujiCategory1.m"; sourceTree = "<group>"; };
+		1C6ECD251B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MainViewController+DaidoujiCategory2.h"; sourceTree = "<group>"; };
+		1C6ECD261B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MainViewController+DaidoujiCategory2.m"; sourceTree = "<group>"; };
+		1C6ECD281B9EB809003EE818 /* UIAlertView+DaiMethodHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+DaiMethodHelper.h"; sourceTree = "<group>"; };
+		1C6ECD291B9EB809003EE818 /* UIAlertView+ DaiMethodHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ DaiMethodHelper.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		019A176A1B9C2BF800BB8986 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C40724F1B9D78A9001F386C /* ILoveDaidouji.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		019A17641B9C2BF800BB8986 = {
+			isa = PBXGroup;
+			children = (
+				019A176F1B9C2BF800BB8986 /* DaiMethodHelper */,
+				019A176E1B9C2BF800BB8986 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		019A176E1B9C2BF800BB8986 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				019A176D1B9C2BF800BB8986 /* DaiMethodHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		019A176F1B9C2BF800BB8986 /* DaiMethodHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1C6ECD1B1B9EB31A003EE818 /* Category */,
+				01AD39E31B9C95A2008BADEC /* ILoveDaidouji */,
+				019A17981B9C2C3B00BB8986 /* DaiMethodHelper */,
+				019A17741B9C2BF800BB8986 /* AppDelegate.h */,
+				019A17751B9C2BF800BB8986 /* AppDelegate.m */,
+				019A17991B9C2C4F00BB8986 /* MainViewController.h */,
+				019A179A1B9C2C4F00BB8986 /* MainViewController.m */,
+				019A179B1B9C2C4F00BB8986 /* MainViewController.xib */,
+				019A177D1B9C2BF800BB8986 /* Images.xcassets */,
+				019A17701B9C2BF800BB8986 /* Supporting Files */,
+			);
+			path = DaiMethodHelper;
+			sourceTree = "<group>";
+		};
+		019A17701B9C2BF800BB8986 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				019A17961B9C2C1C00BB8986 /* Default-568h@2x.png */,
+				019A17711B9C2BF800BB8986 /* Info.plist */,
+				019A17721B9C2BF800BB8986 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		019A17981B9C2C3B00BB8986 /* DaiMethodHelper */ = {
+			isa = PBXGroup;
+			children = (
+				019A179E1B9C2CF700BB8986 /* DaiMethodHelper.h */,
+				019A179F1B9C2CF700BB8986 /* DaiMethodHelper.m */,
+				019A17A41B9C86F000BB8986 /* DaiMethodInfomation.h */,
+				019A17A51B9C86F000BB8986 /* DaiMethodInfomation.m */,
+			);
+			path = DaiMethodHelper;
+			sourceTree = "<group>";
+		};
+		01AD39E31B9C95A2008BADEC /* ILoveDaidouji */ = {
+			isa = PBXGroup;
+			children = (
+				01AD39E41B9C95A2008BADEC /* ILoveDaidouji.a */,
+			);
+			path = ILoveDaidouji;
+			sourceTree = "<group>";
+		};
+		1C6ECD1B1B9EB31A003EE818 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1C6ECD281B9EB809003EE818 /* UIAlertView+DaiMethodHelper.h */,
+				1C6ECD291B9EB809003EE818 /* UIAlertView+ DaiMethodHelper.m */,
+				1C6ECD1C1B9EB334003EE818 /* NSString+Daidouji1.h */,
+				1C6ECD1D1B9EB334003EE818 /* NSString+Daidouji1.m */,
+				1C6ECD1F1B9EB39A003EE818 /* NSString+Daidouji2.h */,
+				1C6ECD201B9EB39A003EE818 /* NSString+Daidouji2.m */,
+				1C6ECD221B9EB454003EE818 /* MainViewController+DaidoujiCategory1.h */,
+				1C6ECD231B9EB454003EE818 /* MainViewController+DaidoujiCategory1.m */,
+				1C6ECD251B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.h */,
+				1C6ECD261B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		019A176C1B9C2BF800BB8986 /* DaiMethodHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 019A17901B9C2BF800BB8986 /* Build configuration list for PBXNativeTarget "DaiMethodHelper" */;
+			buildPhases = (
+				019A17691B9C2BF800BB8986 /* Sources */,
+				019A176A1B9C2BF800BB8986 /* Frameworks */,
+				019A176B1B9C2BF800BB8986 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaiMethodHelper;
+			productName = DaiMethodHelper;
+			productReference = 019A176D1B9C2BF800BB8986 /* DaiMethodHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		019A17651B9C2BF800BB8986 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ChilunChen;
+				TargetAttributes = {
+					019A176C1B9C2BF800BB8986 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 019A17681B9C2BF800BB8986 /* Build configuration list for PBXProject "DaiMethodHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 019A17641B9C2BF800BB8986;
+			productRefGroup = 019A176E1B9C2BF800BB8986 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				019A176C1B9C2BF800BB8986 /* DaiMethodHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		019A176B1B9C2BF800BB8986 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019A177E1B9C2BF800BB8986 /* Images.xcassets in Resources */,
+				019A179D1B9C2C4F00BB8986 /* MainViewController.xib in Resources */,
+				019A17971B9C2C1C00BB8986 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		019A17691B9C2BF800BB8986 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6ECD241B9EB454003EE818 /* MainViewController+DaidoujiCategory1.m in Sources */,
+				019A17761B9C2BF800BB8986 /* AppDelegate.m in Sources */,
+				019A179C1B9C2C4F00BB8986 /* MainViewController.m in Sources */,
+				1C6ECD271B9EB58A003EE818 /* MainViewController+DaidoujiCategory2.m in Sources */,
+				019A17A61B9C86F000BB8986 /* DaiMethodInfomation.m in Sources */,
+				019A17A01B9C2CF700BB8986 /* DaiMethodHelper.m in Sources */,
+				1C6ECD1E1B9EB334003EE818 /* NSString+Daidouji1.m in Sources */,
+				1C6ECD211B9EB39A003EE818 /* NSString+Daidouji2.m in Sources */,
+				1C6ECD2A1B9EB809003EE818 /* UIAlertView+ DaiMethodHelper.m in Sources */,
+				019A17731B9C2BF800BB8986 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		019A178E1B9C2BF800BB8986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		019A178F1B9C2BF800BB8986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		019A17911B9C2BF800BB8986 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DaiMethodHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaiMethodHelper/ILoveDaidouji",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DaiMethodHelper;
+			};
+			name = Debug;
+		};
+		019A17921B9C2BF800BB8986 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DaiMethodHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaiMethodHelper/ILoveDaidouji",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = DaiMethodHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		019A17681B9C2BF800BB8986 /* Build configuration list for PBXProject "DaiMethodHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A178E1B9C2BF800BB8986 /* Debug */,
+				019A178F1B9C2BF800BB8986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		019A17901B9C2BF800BB8986 /* Build configuration list for PBXNativeTarget "DaiMethodHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				019A17911B9C2BF800BB8986 /* Debug */,
+				019A17921B9C2BF800BB8986 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 019A17651B9C2BF800BB8986 /* Project object */;
+}
