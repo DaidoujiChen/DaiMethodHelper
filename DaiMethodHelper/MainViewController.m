@@ -24,13 +24,24 @@
 #pragma mark - ibaction
 
 - (IBAction)pressButtonAction:(id)sender {
+    __weak MainViewController *weakSelf = self;
     printf("\n--------------- Status%td ---------------\n\n\n", self.status);
     switch (self.status) {
+        case -1:
+        {
+            [UIAlertView alertViewWithTitle:@"Warning!!!" message:@"Please change to console log page for this DEMO thx. :)" cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
+            break;
+        }
+            
         case 0:
         {
             printf("call [DaiMethodHelper scanClasses]\n\n");
             [DaiMethodHelper scanClasses];
-            [UIAlertView alertViewWithTitle:@"Scan Methods In All Classes" message:@"You would find duplicate method in console log (if there's any)" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Scan Methods In All Classes" message:@"You would find duplicate method in console log (if there's any)" cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
@@ -38,39 +49,53 @@
         {
             printf("call [DaiMethodHelper scanClass:[NSString class]]\n\n");
             [DaiMethodHelper scanClass:[NSString class]];
-            [UIAlertView alertViewWithTitle:@"Scan Methods In Specific Class" message:@"There are three methods duplicate named iLoveDaidouji in NSString" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Scan Methods In Specific Class" message:@"There are three methods duplicate named \"iLoveDaidouji\" in \"NSString\"" cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
         case 2:
         {
-            [UIAlertView alertViewWithTitle:nil message:@"We would not know which method will be implemented at runtime." cancelButtonTitle:@"Done"];
+            printf("We would not know which method will be invoked at runtime.\n\n");
+            [UIAlertView alertViewWithTitle:@"Tip" message:@"We would not know which method will be invoked at runtime." cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
         case 3:
         {
-            printf("call [DaiMethodHelper verifyClass:[NSString class] selector:@selector(iLoveDaidouji:)]\n\n");
+            printf("call [DaiMethodHelper verifyClass:[NSString class] selector:@selector(iLoveDaidouji)]\n\n");
             [DaiMethodHelper verifyClass:[NSString class] selector:@selector(iLoveDaidouji)];
-            [UIAlertView alertViewWithTitle:@"Verify This Method" message:@"Now we know, it will run the method implement in category Daidouji3 when we call method iLoveDaidouji" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Verify This Method" message:@"Now we know, it will invoke the method implement in category \"Daidouji3\" when we call method \"iLoveDaidouji\"" cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
         case 4:
         {
+            
             NSString *string = [NSString new];
+            printf("NSString *string = [NSString new];\n");
             printf("print [string iLoveDaidouji].UTF8String\n");
-            printf("=> %s\n\n", [string iLoveDaidouji].UTF8String);
-            [UIAlertView alertViewWithTitle:nil message:@"The return value is \"iLoveDaidouji\" when iLoveDaidouji is called directly" cancelButtonTitle:@"Done"];
+            printf("return %s\n\n", [string iLoveDaidouji].UTF8String);
+            [UIAlertView alertViewWithTitle:@"Demo" message:@"The return value is \"iLoveDaidouji\" when \"iLoveDaidouji\" is called directly" cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
         case 5:
         {
             NSString *string = [NSString new];
+            printf("NSString *string = [NSString new];\n");
             printf("print [(NSString *)[DaiMethodHelper perform:string selector:@selector(iLoveDaidouji) category:@\"Daidouji1\"] UTF8String]\n");
-            printf("=> %s\n\n", [(NSString *)[DaiMethodHelper perform:string selector:@selector(iLoveDaidouji) category:@"Daidouji1"] UTF8String]);
-            [UIAlertView alertViewWithTitle:nil message:@"Or we can force to run the method iLoveDaidouji in \"Daidouji1\"" cancelButtonTitle:@"Done"];
+            printf("return %s\n\n", [(NSString *)[DaiMethodHelper perform:string selector:@selector(iLoveDaidouji) category:@"Daidouji1"] UTF8String]);
+            [UIAlertView alertViewWithTitle:@"Demo" message:@"Or we can force to invoke the method \"iLoveDaidouji\" in category \"Daidouji1\"" cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
@@ -78,15 +103,17 @@
         {
             printf("run [self iLoveDaidouji:@\"love\"]\n\n");
             NSLog(@"%@", [self iLoveDaidouji:@"love"]);
-            [UIAlertView alertViewWithTitle:nil message:@"Swizzling is a powerful tool to help us, and have better understanding of third party source. Our method might be injected into any code that we would not know." cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Swizzling" message:@"Swizzling is a powerful tool to help us, and have better understanding of third party source. Our method might be injected into any code that we would not know." cancelButtonTitle:nil otherButtonTitles:@[@"Next"] onClickIndex: ^(NSInteger clickIndex) {
+                [weakSelf pressButtonAction:nil];
+            } onCancel:nil];
             break;
         }
             
         case 7:
         {
-            printf("run [self iLoveDaidouji:@\"love\"]\n\n");
+            printf("run [DaiMethodHelper perform:self selector:@selector(iLoveDaidouji:) category:nil, @\"love\"]\n\n");
             NSLog(@"%@", [DaiMethodHelper perform:self selector:@selector(iLoveDaidouji:) category:nil, @"love"]);
-            [UIAlertView alertViewWithTitle:nil message:@"We can protect our method!" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:nil message:@"It is a possible way to protect our methods." cancelButtonTitle:@"Finish"];
             break;
         }
             
@@ -126,7 +153,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.status = 0;
+    self.status = -1;
 }
 
 @end

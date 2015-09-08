@@ -40,6 +40,7 @@
     return addressMappingTable;
 }
 
+// 掃描某一個固定的 class
 + (void)scan:(Class)aClass {
     
     // 先將 methods 按照名字分類
@@ -75,6 +76,7 @@
     }];
 }
 
+// 驗證指定的 selector 運行哪一個 implementation
 + (void)verify:(Class)aClass selector:(SEL)selector {
     
     // 過濾掉不需要的 method name
@@ -91,6 +93,8 @@
     }];
 }
 
+// 有些 class 會被轉成像是 __NSCFConstantString, 但是本質上他是 NSString 的一個子類
+// 這邊可以把一些狀況導正
 + (Class)tollFreeClass:(id)object {
     if ([object isKindOfClass:[NSCalendar class]]) {
         return [NSCalendar class];
@@ -169,6 +173,14 @@
     }
 }
 
++ (NSString *)spaceGenerator:(NSInteger)spaceCount {
+    NSMutableString *spaceString = [NSMutableString string];
+    for (NSInteger space = 0; space < spaceCount; space++) {
+        [spaceString appendString:@" "];
+    }
+    return spaceString;
+}
+
 #pragma mark - class method
 
 + (void)scanClasses {
@@ -204,6 +216,7 @@
     __block DaiMethodInfomation *information = nil;
     __block BOOL swizzlingDetect = NO;
     __block SEL targetSelector = selector;
+    __block NSInteger swizzlingCount = 0;
     do {
         swizzlingDetect = NO;
         [self methodsInClass:[self tollFreeClass:object] filterRule: ^BOOL(Method method) {
@@ -211,15 +224,18 @@
                 DaiMethodInfomation *newInformation = [[DaiMethodInfomation alloc] initWithAddress:(NSUInteger)method_getImplementation(method)];
                 
                 // 最後需要判別該 method 有沒有被 swizzling
-                if (![newInformation.methodName isEqualToString:NSStringFromSelector(selector)]) {
-                    swizzlingDetect = YES;
+                swizzlingDetect = (![newInformation.methodName isEqualToString:NSStringFromSelector(selector)]);
+                if (swizzlingDetect) {
+                    printf("%sswizzling by %s\n", [self spaceGenerator:swizzlingCount++].UTF8String, [newInformation description].UTF8String);
                     targetSelector = NSSelectorFromString(newInformation.methodName);
                 }
                 else {
-                    if (!category && !newInformation.categoryName) {
-                        information = newInformation;
-                    }
-                    if ([newInformation.categoryName isEqualToString:category]) {
+                    
+                    // 判斷是不是正確選定的 category
+                    BOOL isCorrectCategory = (!category && !newInformation.categoryName) || ([newInformation.categoryName isEqualToString:category]);
+                    
+                    if (isCorrectCategory) {
+                        printf("%sfound %s\n", [self spaceGenerator:swizzlingCount++].UTF8String, [newInformation description].UTF8String);
                         information = newInformation;
                     }
                 }
