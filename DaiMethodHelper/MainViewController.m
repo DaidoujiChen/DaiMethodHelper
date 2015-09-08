@@ -30,7 +30,7 @@
         {
             printf("call [DaiMethodHelper scanClasses]\n\n");
             [DaiMethodHelper scanClasses];
-            [UIAlertView alertViewWithTitle:@"Scan Methods In All Classes" message:@"In the console logs, you can see if there are any method name duplicate." cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Scan Methods In All Classes" message:@"You would find duplicate method in console log (if there's any)" cancelButtonTitle:@"Done"];
             break;
         }
             
@@ -38,13 +38,13 @@
         {
             printf("call [DaiMethodHelper scanClass:[NSString class]]\n\n");
             [DaiMethodHelper scanClass:[NSString class]];
-            [UIAlertView alertViewWithTitle:@"Scan Methods In Specific Class" message:@"In NSString, there are three methods duplicate named iLoveDaidouji" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Scan Methods In Specific Class" message:@"There are three methods duplicate named iLoveDaidouji in NSString" cancelButtonTitle:@"Done"];
             break;
         }
             
         case 2:
         {
-            [UIAlertView alertViewWithTitle:nil message:@"We do not know which method will be implemented at runtime." cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:nil message:@"We would not know which method will be implemented at runtime." cancelButtonTitle:@"Done"];
             break;
         }
             
@@ -52,7 +52,7 @@
         {
             printf("call [DaiMethodHelper verifyClass:[NSString class] selector:@selector(iLoveDaidouji:)]\n\n");
             [DaiMethodHelper verifyClass:[NSString class] selector:@selector(iLoveDaidouji)];
-            [UIAlertView alertViewWithTitle:@"Verify This Method" message:@"Now we know, if we call method iLoveDaidouji, it will run the method implement in category Daidouji3" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:@"Verify This Method" message:@"Now we know, it will run the method implement in category Daidouji3 when we call method iLoveDaidouji" cancelButtonTitle:@"Done"];
             break;
         }
             
@@ -61,7 +61,7 @@
             NSString *string = [NSString new];
             printf("print [string iLoveDaidouji].UTF8String\n");
             printf("=> %s\n\n", [string iLoveDaidouji].UTF8String);
-            [UIAlertView alertViewWithTitle:nil message:@"If we call iLoveDaidouji directly the return value is \"iLoveDaidouji\"" cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:nil message:@"The return value is \"iLoveDaidouji\" when iLoveDaidouji is called directly" cancelButtonTitle:@"Done"];
             break;
         }
             
@@ -78,7 +78,7 @@
         {
             printf("run [self iLoveDaidouji:@\"love\"]\n\n");
             NSLog(@"%@", [self iLoveDaidouji:@"love"]);
-            [UIAlertView alertViewWithTitle:nil message:@"Swizzling is a powerful tool help us, or help third party source. Our method may injection any code that we do not know." cancelButtonTitle:@"Done"];
+            [UIAlertView alertViewWithTitle:nil message:@"Swizzling is a powerful tool to help us, and have better understanding of third party source. Our method might be injected into any code that we would not know." cancelButtonTitle:@"Done"];
             break;
         }
             
